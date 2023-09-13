@@ -12,8 +12,8 @@ export default class ProductsController {
     // insert into
     public async store({}: HttpContextContract) {
         return await Product.create({
-            productname: "makeproductname",
-            productcompany: "makeproductcompany",
+            product_name: "makeproduct_name",
+            product_company: "makeproduct_company",
             quantity: 10,
             rate: 1.0,
             price: 100
@@ -30,8 +30,8 @@ export default class ProductsController {
     // UPDATE
     public async update({params: {id}}: HttpContextContract) {
         return await Product.query().where({id:id}).update({
-            productname: "updateproductname",
-            productcompany: "updateproductcompany",
+            product_name: "updateproduct_name",
+            product_company: "updateproduct_company",
             quantity: 20,
             rate: 5.0,
             price: 1000

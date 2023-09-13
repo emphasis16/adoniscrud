@@ -6,10 +6,10 @@ export default class Product extends BaseModel {
   public id: number
 
   @column()
-  public productname: string
+  public product_name: string
 
   @column()
-  public productcompany: string
+  public product_company: string
 
   @column()
   public quantity: number
